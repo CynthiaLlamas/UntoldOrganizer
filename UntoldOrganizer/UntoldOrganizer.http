@@ -1,0 +1,6 @@
+@UntoldOrganizer_HostAddress = http://localhost:5190
+
+GET {{UntoldOrganizer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
