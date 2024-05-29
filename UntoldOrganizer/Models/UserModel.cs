@@ -1,6 +1,10 @@
+using System.Text.Json.Serialization;
+
 public class User{
-    string username {get;set;}
-    string password {get;set;}
-    string email {get;set;}
+    public string uuid {get;set;}
+    public string username {get;set;}
+    [JsonIgnore]
+    private string password {get;set;}
+    public string email {get;set;}
     List<Character> characters = new List<Character>();
 }
